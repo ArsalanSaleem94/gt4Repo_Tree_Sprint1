@@ -99,9 +99,6 @@ namespace CSharpTree
         #region Deleting Node
 
 
-
-        #endregion
-
         //private bool HaveChild(Node)
         public Tuple<bool, string> RemoveNode(TreeNode<T> found)
         {
@@ -116,6 +113,9 @@ namespace CSharpTree
 
             return new Tuple<bool, string>(ElementsIndex.Remove(found), "Parent Removed");
         }
+
+
+        #endregion
 
     }
 }
